@@ -10,9 +10,11 @@ set relativenumber
 
 " Plugins
 call plug#begin()
-
+Plug 'tpope/vim-surround'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
-
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 " NerdTree
