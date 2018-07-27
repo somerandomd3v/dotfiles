@@ -38,3 +38,5 @@ alias :wq='exit'
 alias :q='exit'
 alias v='vim'
 alias sv='sudo vim'
+
+eval $(thefuck --alias)
