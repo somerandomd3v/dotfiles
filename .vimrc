@@ -7,15 +7,25 @@ endif
 
 set number
 set relativenumber
+set hidden
+set showtabline=0
 
 " Plugins
 call plug#begin()
 Plug 'tpope/vim-surround'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'scrooloose/nerdtree'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ervandew/supertab'
 call plug#end()
+
+" Colorscheme
+colorscheme gruvbox
+set bg=dark
 
 " NerdTree
 autocmd vimenter * NERDTree
