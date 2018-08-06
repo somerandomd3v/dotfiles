@@ -1,3 +1,18 @@
+#                         _                 _
+#  __ _ _ __   ___  _ __ ( )___     _______| |__  _ __ ___
+# / _` | '_ \ / _ \| '_ \|// __|   |_  / __| '_ \| '__/ __|
+#| (_| | | | | (_) | | | | \__ \  _ / /\__ \ | | | | | (__
+# \__,_|_| |_|\___/|_| |_| |___/ (_)___|___/_| |_|_|  \___|
+
+# Check if Dependencies exist.
+if [ -e ~/.antigen.zsh ] || [ -e ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh]
+	then
+
+	else
+		chmod +x zsh-dependencies-install.sh
+		./zsh-dependencies-install.sh
+fi
+
 source ~/.antigen.zsh
 
 ### Antigen
@@ -38,5 +53,5 @@ alias :wq='exit'
 alias :q='exit'
 alias v='vim'
 alias sv='sudo vim'
-
-eval $(thefuck --alias)
+alias ZZ='exit'
+alias ZQ='exit'
