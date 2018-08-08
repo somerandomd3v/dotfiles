@@ -5,6 +5,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+set filetype indent on
 set number
 set relativenumber
 set hidden
@@ -14,7 +15,6 @@ set showtabline=0
 call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'vim-ctrlspace/vim-ctrlspace'
-Plug 'scrooloose/nerdtree'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'morhetz/gruvbox'
@@ -26,9 +26,3 @@ call plug#end()
 " Colorscheme
 colorscheme gruvbox
 set bg=dark
-
-" NerdTree
-autocmd vimenter * NERDTree
-let NERDTreeShowHidden=1
-noremap <C-E> :NERDTree <Return>
-
