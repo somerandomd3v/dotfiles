@@ -1,11 +1,10 @@
-" Install Plug if missing
+ "Install Plug if missing
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-set filetype indent on
 set number
 set relativenumber
 set hidden
@@ -22,6 +21,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ervandew/supertab'
 call plug#end()
+
+" ctrl-space config
+let g:CtrlSpaceGlobCommand = 'ag --hidden ""'
 
 " Colorscheme
 colorscheme gruvbox
